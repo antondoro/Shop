@@ -3,14 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проста HTML-сторінка</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <title>Інтернет-магазин</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Ласкаво просимо!</h1>
-        <p>Це приклад простої веб-сторінки з HTML і CSS.</p>
-        <button onclick="alert('Дякую, що натиснули кнопку!')">Натисніть мене</button>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Інтернет-магазин</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Товари</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Кошик</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Ласкаво просимо до нашого Інтернет-магазину!</h2>
+            <p>Покупки онлайн, зручний вибір товарів для будь-якої потреби!</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Наші популярні товари</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Назва товару</th>
+                        <th>Опис</th>
+                        <th>Ціна</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Товар 1</td>
+                        <td>Якісний товар для вашого комфорту. Опис товару та його переваги.</td>
+                        <td>200 грн</td>
+                        <td><a href="#">Додати до кошика</a></td>
+                    </tr>
+                    <tr>
+                        <td>Товар 2</td>
+                        <td>Надійність і довговічність у кожному елементі. Підходить для щоденного використання.</td>
+                        <td>350 грн</td>
+                        <td><a href="#">Додати до кошика</a></td>
+                    </tr>
+                    <tr>
+                        <td>Товар 3</td>
+                        <td>Товар високої якості за доступною ціною. Ідеальний вибір для вашого дому.</td>
+                        <td>150 грн</td>
+                        <td><a href="#">Додати до кошика</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Про нас</h2>
+            <p>Ми – команда професіоналів, яка прагне надати вам найкращий сервіс та товар. Ми працюємо, щоб кожен ваш покупець був задоволений та отримав якісну продукцію.</p>
+            <p>Наш магазин пропонує широкий асортимент товарів, від побутової техніки до аксесуарів для дому. Ми постійно оновлюємо наш каталог, щоб ви могли знайти те, що вам потрібно.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Контакти</h2>
+            <p>Телефон: 123-456-789</p>
+            <p>Email: info@store.com</p>
+            <p>Адреса: вул. Торгова, 123, Київ, Україна</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Інтернет-магазин. Всі права захищені.</p>
+        </div>
+    </footer>
 </body>
 </html>
